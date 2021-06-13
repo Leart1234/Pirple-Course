@@ -1,0 +1,89 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+    padding-top:50px;
+}
+
+
+
+body {
+    border: 8px solid lightgreen;
+    border-radius: 20px;
+    padding: 40px;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+#clock {
+    height:120px;
+    font-size: 40px;
+    font-family: arial;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  color: white;
+}
+
+h2 {
+	text-align:center;
+  
+
+}
+
+#alarm-container {
+	text-align:center;
+    font-family: Verdana;
+    font-size: 0.6em;
+    padding: 0.7em;
+  color: white;
+}
+
+label {
+	display:inline-block;
+}
+
+.timeofday {
+    background-color: #eee;
+}
+
+.bigger {
+    font-weight:bold;
+    font-size: 18px;
+}
+
+table {
+    margin-top: 20px;
+    text-align: center;
+  }
+  table th {
+    padding: 5px;
+    color: #8c5fd3;
+    font-size: 1.5em;
+  }
+  table td {
+    background: #8c5fd3;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: white;
+  }
+  
+  .triggered {
+    font-weight: bold;
+    background: #5e3c96;
+    min-width: 150px;
+  }
+#setButton {
+    float:left;
+    background-color:lightgreen;
+    margin-top:10px;
+}
+#clearButton {
+    float:right;
+    background-color:red;
+    margin-top:10px;
+}

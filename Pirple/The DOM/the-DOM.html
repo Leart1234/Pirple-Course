@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Colors</title>
+    <style>
+        #rectangleWrapper {
+         padding: 50px 50px 0 50px;
+       }
+ 
+       .rectangle {
+         height: 100px;
+       }
+ 
+       #crimson {
+         background-color: #DC143C;
+       }
+       #hot-pink {
+         background-color: #ff0080;
+       }
+       #coral {
+         background-color: #FF7F50;
+       }
+       #moccasin {
+         background-color: #FFE4B5;
+       }
+       #orchid {
+         background-color: #DA70D6;
+       }
+       #olive {
+         background-color: #808000;
+       }
+       #light-sea-green {
+         background-color: #20B2AA;
+       }
+       #steel-blue {
+         background-color: #4682B4;
+       }
+       #wheat {
+         background-color: #F5DEB3;
+       }
+       #maroon {
+         background-color: #800000;
+       }  
+     </style>
+</head>
+<body>    
+    <h1>My Favorite Colors</h1>
+    <h2>Here are my favorite colors</h2>
+    <body onload="displayIDs()">        
+    
+        <div id="rectangleWrapper">
+          <div class="rectangle" id="crimson"></div>
+          <p>#DC143C</p>
+          <div class="rectangle" id="hot-pink"></div>
+          <p>#FF69B4</p>
+          <div class="rectangle" id="coral"></div>
+          <p>#FF7F50</p>
+          <div class="rectangle" id="moccasin"></div>
+          <p>#FFE4B5</p>
+          <div class="rectangle" id="orchid"></div>
+          <p>#DA70D6</p>
+          <div class="rectangle" id="olive"></div>
+          <p>#808000</p>
+          <div class="rectangle" id="light-sea-green"></div>
+          <p>#20B2AA</p>
+          <div class="rectangle" id="steel-blue"></div>
+          <p>#4682B4</p>
+          <div class="rectangle" id="wheat"></div>
+          <p>#F5DEB3</p>
+          <div class="rectangle" id="maroon"></div>
+          <p>#800000</p>
+        </div>
+        <script>
+            function displayIDs() {
+              console.log("Here are the rectangle IDs");
+        
+              const wrapper = document.getElementById("rectangleWrapper");
+              const rectangles = wrapper.getElementsByClassName("rectangle");
+        
+              for (const rectangle of rectangles) {
+                console.log(rectangle.id);
+              }
+            }
+        </script>
+</body>
+</html>
